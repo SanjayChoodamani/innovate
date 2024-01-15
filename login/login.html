@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/img/logo.png">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-page">
+        <div class="form">
+            <form class="login-form " action="../Dashborad/dashboard.html" onsubmit="return validateForm()">
+                <h2>SIGN IN TO YOUR ACCOUNT</h2>
+                <input type="text" required placeholder="Username" id="user" autocomplete="off" />
+                <input oninput="return formvalid()" type="password" required placeholder="Password" id="pass" autocomplete="off" />
+                <span id="vaild-pass"></span>
+                <button type="submit">SIGN IN</button>
+                <p class="message"><a href="#">Forgot your password?</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="validate.js"></script>
+</body>
+</html>
